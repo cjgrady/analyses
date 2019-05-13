@@ -84,7 +84,7 @@ if __name__ == '__main__':
                 inf_file)
     elif args.data_format == 'phylip':
         with open(args.data_filename) as in_file:
-            sequences = data_reders.read_phylip_alignment_flo(in_file)
+            sequences = data_readers.read_phylip_alignment_flo(in_file)
         headers = None
     elif args.data_format == 'table':
         with open(args.data_filename) as in_file:
